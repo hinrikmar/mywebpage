@@ -1,14 +1,10 @@
 import React, {useState, useEffect} from 'react';
 
-import { Button, Alert } from 'react-bootstrap';
-require('dotenv').config()
-
-const baseurl = process.env.REACT_APP_API_URL;
+import { Alert } from 'react-bootstrap';
 
 export default function AlertDismissible(props) {
     const [show, setShow] = useState(true);
     const [errors, setErrors] = useState(props.errors)
-    const [isSubmitting, setSubmitting] = useState(props.submit)
 
     useEffect(() => {
       // Update the document title using the browser API

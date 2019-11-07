@@ -2,7 +2,6 @@ import React, { useState, useEffect }  from 'react';
 import './ContactMe.scss';
 import { InputGroup, FormControl, Button, Row, Col} from 'react-bootstrap';
 import AlertDismissible from '../AlertDismissible';
-import fetchValidation from '../../fetchValidation';
 require('dotenv').config()
 
 const baseurl = process.env.REACT_APP_API_URL;

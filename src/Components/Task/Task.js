@@ -6,10 +6,6 @@ const dateFormat = require('dateformat');
 
 class Task extends React.Component {
 
-    constructor(props){
-        super(props)
-    }
-
     render() {
         const {title, startdate, enddate, img, text_description} = this.props.obj
         
