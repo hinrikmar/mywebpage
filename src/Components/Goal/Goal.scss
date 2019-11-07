@@ -1,0 +1,21 @@
+@import '../../config';
+
+.goal_img_container{
+    //border-radius: 30%;
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+}
+.goal_title_container{
+    text-align: center;
+}
+.goal{
+    min-width:100%;
+    text-align: "center";
+    margin: 1px;
+}
+.goal_row{
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 3%;
+}

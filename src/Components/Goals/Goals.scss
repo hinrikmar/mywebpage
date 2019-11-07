@@ -1,0 +1,17 @@
+@import '../../config';
+
+.main_goal_container{
+    padding-top: 3%;
+}
+.goal_container{
+    width: 400px;
+    margin: auto;
+    //padding-bottom: 1rem;
+}
+.goal_paragraph{
+    text-align: left;
+    min-width: fill-available;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 3% ;
+}
