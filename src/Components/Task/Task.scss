@@ -22,10 +22,21 @@
 }
 
 .img_container{
-    width: 300;
-    height: 200;
+    width: 300px;
+    height: 200px;
     background-color: white;
     padding: 3%;
     border: 1px solid black;
     border-radius: 10%;
+}
+
+@media (max-width: 600px) {
+    .img_container{
+        width: 210px;
+        height: 140px;
+        background-color: white;
+        padding: 1%;
+        border: 1px solid black;
+        border-radius: 10%;
+    }
 }
