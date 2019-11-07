@@ -9,7 +9,7 @@ export default function AlertDismissible(props) {
     useEffect(() => {
       // Update the document title using the browser API
       console.log('UseEffect')
-      errors.length > 0 ? setShow(true) : setShow(false) ;
+      //errors.length > 0 ? setShow(true) : setShow(false) ;
       console.log(errors.length )
       
 
@@ -17,7 +17,7 @@ export default function AlertDismissible(props) {
   
     return (
       <>
-        <Alert show={show} variant="warning" style = {{border: "1px solid black"}}>
+        <Alert show={show} variant={errors.length > 0 ? "warning" : "success"} style = {{border: "1px solid black"}}>
           <Alert.Heading>Oh no error!</Alert.Heading>
           <div style = {{textAlign: "left"}  }>
           {
