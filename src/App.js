@@ -6,6 +6,7 @@ import Tasks from './Components/Tasks/Tasks'
 import Goals from './Components/Goals/Goals'
 import AboutSite from './Components/AboutSite/AboutSite'
 import ContactMe from './Components/ContactMe/ContactMe'
+import Footer from './Components/Footer/Footer'
 
 
 class App extends React.Component {
@@ -37,13 +38,13 @@ class App extends React.Component {
     return (
       <div className="App">
         <Navbar bg="dark" variant="dark">
-        <Nav className="mr-auto">
-          <Nav.Link onClick={() => { this.handleScrollTo(this.refAboutMe) }}>About me</Nav.Link>
-          <Nav.Link onClick={() => { this.handleScrollTo(this.refTasks) }}>Tasks</Nav.Link>
-          <Nav.Link onClick={() => { this.handleScrollTo(this.refGoals) }}>My goals</Nav.Link>
-          <Nav.Link onClick={() => { this.handleScrollTo(this.refAboutSite) }}>About this site</Nav.Link>
-          <Nav.Link onClick={() => { this.handleScrollTo(this.refContactMe) }}>Contact me</Nav.Link>
-        </Nav>
+          <Nav className="mr-auto">
+            <Nav.Link onClick={() => { this.handleScrollTo(this.refAboutMe) }}>About me</Nav.Link>
+            <Nav.Link onClick={() => { this.handleScrollTo(this.refTasks) }}>Tasks</Nav.Link>
+            <Nav.Link onClick={() => { this.handleScrollTo(this.refGoals) }}>My goals</Nav.Link>
+            <Nav.Link onClick={() => { this.handleScrollTo(this.refAboutSite) }}>About this site</Nav.Link>
+            <Nav.Link onClick={() => { this.handleScrollTo(this.refContactMe) }}>Contact me</Nav.Link>
+          </Nav>
         </Navbar>
         <header className="App-header">
           <h1>Hinrik Már</h1>
@@ -65,6 +66,9 @@ class App extends React.Component {
         </div>
         <div ref={this.refContactMe}>
           <ContactMe/>
+        </div >
+        <div style = {{marginBottom: "3%"}}>
+          <Footer/>
         </div>
       </div>
     );
