@@ -32,6 +32,7 @@ class AboutSite extends React.Component {
                     <p>
                         {site.text_about_site}
                     </p>
+                    <a href="https://github.com/hinrikmar/mywebpage\">Website on github</a>
                   </div>
                 ))
               }
