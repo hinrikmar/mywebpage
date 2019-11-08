@@ -33,7 +33,7 @@ export default function  ContactMe() {
                     .then((data) => {
                         setErrors( data )
                         console.log(data)
-                        if(data.length == 0){
+                        if(data.length === 0){
                             nameInput.current.value = '';
                             emailInput.current.value = '';
                             messageInput.current.value = '';
