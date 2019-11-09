@@ -8,7 +8,6 @@ import AboutSite from './Components/AboutSite/AboutSite'
 import ContactMe from './Components/ContactMe/ContactMe'
 import Footer from './Components/Footer/Footer'
 
-
 class App extends React.Component {
 
   refAboutMe = React.createRef();
@@ -47,8 +46,12 @@ class App extends React.Component {
           </Nav>
         </Navbar>
         <header className="App-header">
-          <h1>Hinrik Már</h1>
-          </header>
+          <div className="text">
+            <strong>
+                Hi, I'm Hinrik
+            </strong>
+          </div>
+        </header>
 
         <div className="spacer"></div>
 

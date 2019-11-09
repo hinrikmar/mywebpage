@@ -7,14 +7,19 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-size: cover;
+    background-color: transparent;
+    background-position: 50% 50%;
+    background-image: url("https://res.cloudinary.com/dusj3d8bs/image/upload/v1573316672/IMG_0063.jpg");
+    
+    padding-top: 450px;
+    padding-bottom: 350px;
+   
+    
+}
+.text {
+  font-size: 2em;
+
 }
 
 .App-link {
