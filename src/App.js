@@ -47,9 +47,6 @@ class App extends React.Component {
         </Navbar>
         <header className="App-header">
           <div className="text">
-            <strong>
-                Hi, I'm Hinrik
-            </strong>
           </div>
         </header>
 
