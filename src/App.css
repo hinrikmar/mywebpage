@@ -10,18 +10,12 @@
   background-size: cover;
   background-color: transparent;
   background-position: 30% 70%;
-  background-image: url("https://res.cloudinary.com/dusj3d8bs/image/upload/v1573316672/IMG_0063.jpg");
+  background-image: url("https://res.cloudinary.com/dusj3d8bs/image/upload/c_scale,h_1333,q_90,w_2000/v1573316672/IMG_0063.jpg");
   
   padding-top: 450px;
   padding-bottom: 350px;
    
     
-}
-.text {
-  
-  font-size: 2em;
-  color: black;
-
 }
 
 .App-link {
