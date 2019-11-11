@@ -84,7 +84,7 @@ export default function  ContactMe() {
                 <Row>
                     <Col>
                     <InputGroup className="mb-3">
-                        <Button onClick = {() => handleSubmit()}> Submit </Button>
+                        <Button variant="outline-secondary" onClick = {() => handleSubmit()}> Submit </Button>
                     </InputGroup>
                     </Col>
                 { (errors.length > 0) && (<Col xs="auto"><AlertDismissible errors = {errors}/></Col>)}
