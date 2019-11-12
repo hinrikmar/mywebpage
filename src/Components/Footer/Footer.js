@@ -19,7 +19,7 @@ class Footer extends React.Component {
                 placement="top"
                 overlay={
                     <Tooltip id={`tooltip-top`}>
-                    <strong>Let's catch up on facebook!</strong>
+                      Let's catch up on facebook!
                     </Tooltip>
                 }
                 >
@@ -40,7 +40,7 @@ class Footer extends React.Component {
                 placement="top"
                 overlay={
                     <Tooltip id={`tooltip-top`}>
-                    <strong>Follow me on instagram!</strong>
+                      Follow me on instagram!
                     </Tooltip>
                 }
                 >
@@ -61,7 +61,7 @@ class Footer extends React.Component {
                 placement="top"
                 overlay={
                     <Tooltip id={`tooltip-top`}>
-                    <strong>Check out my github!</strong>
+                    Check out my github!
                     </Tooltip>
                 }
                 >
