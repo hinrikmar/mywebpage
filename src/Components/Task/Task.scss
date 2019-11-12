@@ -1,7 +1,7 @@
 @import '../../config';
 
 .main_container{
-    padding-bottom: 5%;
+    padding-bottom: 70px;
     padding-left: 10%;
 }
 
@@ -21,6 +21,7 @@
 
 .col_container{
     padding-left: 10%;
+    //padding-bottom: 40px;
 }
 
 .img_container{
@@ -53,10 +54,5 @@
         text-align: left;
         word-wrap: break-word;
         padding-left: 10%;
-    }
-    .col_container{
-        padding-left: 10%;
-        padding-top: 3%;
-        padding-bottom: 5%;
     }
 }
