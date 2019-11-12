@@ -67,7 +67,7 @@ class App extends React.Component {
         <div ref={this.refContactMe}>
           <ContactMe/>
         </div >
-        <div style = {{marginBottom: "3%"}}>
+        <div style = {{marginBottom: "3%", paddingTop: "5%"}}>
           <Footer/>
         </div>
       </div>
