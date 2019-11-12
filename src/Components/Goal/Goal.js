@@ -38,7 +38,7 @@ class Goal extends React.Component {
                             </Row>
                             <Row >
                                 <div className = "goal">
-                                    <img className = "goal_img_container" src={task.img} width="75" height="75"></img>
+                                    <img className = "goal_img_container" src={task.img} ></img>
                                 </div>
                             </Row>
                         </Col>
