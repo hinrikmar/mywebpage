@@ -32,7 +32,7 @@ class Goals extends React.Component {
             <div className = "main_goal_container">
                 <h1>My current goals </h1>
                 {   this.state.goals.map((item,i) => (
-                <div>
+                <div className = "Goal_container">
                     <h3>{item.title}</h3>
                         <Goal id = {item.id} />                                                   
                     <div className = "goal_paragraph">
