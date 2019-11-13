@@ -1,15 +1,11 @@
 import React from 'react'
 import './Goal.scss';
-import { Row, Col, Grid, Container } from 'react-bootstrap';
+import { Row, Col} from 'react-bootstrap';
 require('dotenv').config()
 
 const baseurl = process.env.REACT_APP_API_URL;
 
 class Goal extends React.Component {
-
-    constructor(props){
-        super(props)
-    }
 
     state = {
         tasks: []
@@ -38,7 +34,7 @@ class Goal extends React.Component {
                             </Row>
                             <Row >
                                 <div className = "goal">
-                                    <img className = "goal_img_container" src={task.img} ></img>
+                                    <img className = "goal_img_container" src={task.img} alt="" ></img>
                                 </div>
                             </Row>
                         </Col>

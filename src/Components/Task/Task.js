@@ -11,7 +11,7 @@ class Task extends React.Component {
         
         return (
                 <Row className = "main_container">
-                    <Col xs = "auto" className = "img_row"  > <img  className = "img_container" src={img}></img> </Col>
+                    <Col xs = "auto" className = "img_row"  > <img  className = "img_container" src={img} alt="" ></img> </Col>
                     <Col xs = "auto" className = "col_container"> 
                         <Row className = "row_container_title">{title}</Row>
                         <Row className = "row_container">From: {dateFormat(startdate, "isoDate")}</Row>

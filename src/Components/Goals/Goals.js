@@ -8,10 +8,6 @@ const baseurl = process.env.REACT_APP_API_URL;
 
 class Goals extends React.Component {
 
-    constructor(props){
-        super(props)
-    }
-
     state = {
         goals: [],
       }

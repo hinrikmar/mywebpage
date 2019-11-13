@@ -1,19 +1,10 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 
 import { Alert } from 'react-bootstrap';
 
 export default function AlertDismissible(props) {
-    const [show, setShow] = useState(true);
-    const [errors, setErrors] = useState(props.errors)
-
-    useEffect(() => {
-      // Update the document title using the browser API
-      console.log('UseEffect')
-      //errors.length > 0 ? setShow(true) : setShow(false) ;
-      console.log(errors.length )
-      
-
-    }, [show, errors]);
+    const [show] = useState(true);
+    const [errors] = useState(props.errors)
   
     return (
       <>

@@ -1,7 +1,5 @@
 import React from 'react';
-import { Row, Col, OverlayTrigger, Tooltip} from 'react-bootstrap';
-//import './AboutSite.scss';
-
+import {OverlayTrigger, Tooltip} from 'react-bootstrap';
 
 class Footer extends React.Component {
 

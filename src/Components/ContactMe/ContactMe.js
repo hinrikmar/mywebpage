@@ -8,12 +8,12 @@ const baseurl = process.env.REACT_APP_API_URL;
 
 export default function  ContactMe() {
 
-    const [nameInput, setNameInput] = useState(React.createRef());
-    const [emailInput, setEmailInput] = useState(React.createRef());
-    const [messageInput, setMessageInput] = useState(React.createRef());
+    const [nameInput] = useState(React.createRef());
+    const [emailInput] = useState(React.createRef());
+    const [messageInput] = useState(React.createRef());
     const [errors, setErrors] = useState([]);
     const [submit, setSubmit] = useState(false);
-    
+
     useEffect(() => {
         
         if(submit){
@@ -32,7 +32,6 @@ export default function  ContactMe() {
                     }).then(res => res.json())
                     .then((data) => {
                         setErrors( data )
-                        console.log(data)
                         if(data.length === 0){
                             nameInput.current.value = '';
                             emailInput.current.value = '';
@@ -44,8 +43,7 @@ export default function  ContactMe() {
             fetchData();
         }
         setSubmit(false);
-       console.log(submit)
-    }, [errors])
+    }, [errors, emailInput, messageInput, nameInput, submit])
     
 
      function handleSubmit() {
