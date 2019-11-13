@@ -23,7 +23,6 @@ function FetchValidation(props) {
                 }).then(res => res.json())
                 .then((data) => {
                     this.setErrors( data )
-                    console.log(this.state.errors)
                 })
                 .catch(console.log)
              }

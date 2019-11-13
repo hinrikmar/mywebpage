@@ -17,7 +17,6 @@ class Goals extends React.Component {
         .then(res => res.json())
         .then((data) => {
             this.setState({ goals: data })
-            //console.log(this.state.goals)
         })
         .catch(console.log)
     }
@@ -28,7 +27,7 @@ class Goals extends React.Component {
             <div className = "main_goal_container">
                 <h1>My current goals </h1>
                 {   this.state.goals.map((item,i) => (
-                <div className = "Goal_container">
+                <div className = "Goal_container" key = {i.toString()}>
                     <h3>{item.title}</h3>
                         <Goal id = {item.id} />                                                   
                     <div className = "goal_paragraph">

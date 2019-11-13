@@ -15,7 +15,6 @@ class AboutSite extends React.Component {
       .then(res => res.json())
       .then((data) => {
       this.setState({ aboutsite: data })
-      console.log(this.state.aboutsite)
       })
       .catch(console.log)
   }
@@ -25,11 +24,11 @@ class AboutSite extends React.Component {
           <div className = "aboutSite_container">
               {
                 this.state.aboutsite.map((site,i) => (
-                  <div>
+                  <div key = {i.toString()}>
                     <h1>
                       {site.title}
                     </h1>
-                    <p classname = "aboutSite_p">
+                    <p className = "aboutSite_p">
                         {site.text_about_site}
                     </p>
                     <a href="https://github.com/hinrikmar/mywebpage\">Project on github</a>

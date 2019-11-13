@@ -16,7 +16,6 @@ class Goal extends React.Component {
         .then(res => res.json())
         .then((data) => {
             this.setState({ tasks: data })
-            console.log(this.state.tasks)
         })
         .catch(console.log)
     }
@@ -26,7 +25,7 @@ class Goal extends React.Component {
             <Row className = "goal_row" md = {3}>
                 {
                 this.state.tasks.map((task,i) => (
-                        <Col xs = {4} xsOffset={-2}>
+                        <Col xs = {4} key = {i.toString()}>
                             <Row float="center">
                                 <div className = "goal" >
                                     {task.task}

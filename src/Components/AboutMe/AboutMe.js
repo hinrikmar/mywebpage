@@ -15,7 +15,7 @@ class AboutMe extends React.Component {
         .then(res => res.json())
         .then((data) => {
         this.setState({ aboutme: data })
-        console.log(this.state.aboutme)
+        
         })
         .catch(console.log)
     }
@@ -25,7 +25,7 @@ class AboutMe extends React.Component {
             <div className = "aboutme__container">
                 {
                     this.state.aboutme.map((item, i) => (
-                        <div>
+                        <div key = {i.toString()}>
                             <h1>
                                 {item.title}
                             </h1>

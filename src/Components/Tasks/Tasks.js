@@ -17,7 +17,6 @@ class Tasks extends React.Component {
         .then(res => res.json())
         .then((data) => {
         this.setState({ tasks: data })
-        console.log(this.state.tasks)
         })
         .catch(console.log)
     }
@@ -31,7 +30,7 @@ class Tasks extends React.Component {
                         <Container>
                         {
                             this.state.tasks.map((item, i) => (
-                                <Task obj = {item} />
+                                <Task obj = {item} key = {i.toString()} />
                             ))
                         }
                        </Container>

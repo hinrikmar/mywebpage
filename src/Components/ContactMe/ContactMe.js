@@ -57,27 +57,26 @@ export default function  ContactMe() {
                 <h1>Contact Me</h1>
                 <div className = "input_form">
                 <InputGroup className="mb-3">
-                <FormControl
-                placeholder="Name"
-                aria-label="Name"
-                ref={nameInput}
-                />
+                    <FormControl
+                    placeholder="Name"
+                    aria-label="Name"
+                    ref={nameInput}
+                    />
                 </InputGroup>
                 <InputGroup className="mb-3">
-                <FormControl
-                placeholder="Email"
-                aria-label="Email"
-                ref={emailInput}
-                />
+                    <FormControl
+                    placeholder="Email"
+                    aria-label="Email"
+                    ref={emailInput}
+                    />
                 </InputGroup>
                 <InputGroup className="mb-3" size = 'lg'> 
-                <FormControl
-                FormControl as="textarea"
-                placeholder="Message"
-                aria-label="Message"
-                ref={messageInput}
-                
-                />
+                    <FormControl
+                        as="textarea"
+                        placeholder="Message"
+                        aria-label="Message"
+                        ref={messageInput}
+                    />
                 </InputGroup>
                 <Row>
                     <Col>
@@ -91,31 +90,3 @@ export default function  ContactMe() {
             </div>
         );
     }
-
-
-
-
-    /*
-        if(submit){
-            const fetchData = async () => {
-                await fetch(new URL('contactme/',baseurl), {
-                    method: 'POST',
-                    headers: {
-                        'Accept': 'application/json',
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({
-                        name: '',
-                        email: '',
-                        message: '',
-                    })
-                    }).then(res => res.json())
-                    .then((data) => {
-                        setErrors( data )
-                        console.log(errors)
-                    })
-                    .catch(console.log)
-                }
-            return fetchData();
-        }
-    */
