@@ -12,7 +12,7 @@ export default function AlertDismissible(props) {
           <Alert.Heading>Oh no error!</Alert.Heading>
           <div style = {{textAlign: "left"}  }>
           {
-            errors.map((error,i) => ( <li>{error.error}</li>))
+            errors.map((error,i) => ( <li key={i.toString()}>{error.error}</li>))
           }
           </div>
         </Alert>
