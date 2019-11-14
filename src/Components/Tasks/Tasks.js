@@ -27,13 +27,13 @@ class Tasks extends React.Component {
             <div className = "tasks_container">
                     <h1>What have I done? </h1>
                     <div className = "task_container">
-                        <Container>
+                        <div>
                         {
                             this.state.tasks.map((item, i) => (
                                 <Task obj = {item} key = {i.toString()} />
                             ))
                         }
-                       </Container>
+                       </div>
                     </div>
             </div>
       );

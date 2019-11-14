@@ -1,12 +1,14 @@
 @import '../../config';
 
 .main_goal_container{
-    padding: calc(3% + .5em);
+    padding-top: calc(3% + .5em);
+    padding-bottom: calc(3% + .5em);
 }
 
 .goal_paragraph{
     padding-left: 20%;
     padding-right: 20%;
+    text-align: left;
 }
 
 .Goal_container{

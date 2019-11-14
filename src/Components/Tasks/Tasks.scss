@@ -5,18 +5,15 @@
     background-color: whitesmoke;
 }
 .task_container{
-    margin: auto;
-    padding: 3%;
-    //padding-right: 10%;
-    //min-width: 80%;
+    left: 50%;
+    padding-top: 3em;
+    //margin: auto;
+    //padding: 3%;
 }
 
 
 @media (max-width: 600px) {
     .task_container{
-        //margin: auto;
         padding-left: 3%;
-        //padding-right: 3%;
-        //min-width: 80%;
     }
 }

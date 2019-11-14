@@ -2,6 +2,8 @@
 
 .main_container{
     padding-bottom: 70px;
+    align-items: center;
+    justify-content: center;
     //padding-left: 10%;
 }
 
@@ -20,8 +22,9 @@
 }
 
 .col_container{
-    //padding-left: 10%;
     padding-top: 10px;
+    position: absolute;
+    left: 15px;
 }
 
 .img_container{
@@ -33,8 +36,8 @@
     border-radius: 10%;
 }
 .img_row{
-    margin-left: -15px;
-    margin-right: 50px;
+    //margin-left: -15px;
+   // margin-right: 50px;
 }
 
 @media (max-width: 600px) {
@@ -47,16 +50,14 @@
         border-radius: 10%;
     }
     .row_container{
-        max-width: 210px;
+        max-width: 240px;
         text-align: left;
         word-wrap: break-word;
-        //padding-left: 10%;
     }
     .row_container_title{
-        max-width: 210px;
+        max-width: 240px;
         font-size: 1.5em;
         text-align: left;
         word-wrap: break-word;
-        //padding-left: 10%;
     }
 }
